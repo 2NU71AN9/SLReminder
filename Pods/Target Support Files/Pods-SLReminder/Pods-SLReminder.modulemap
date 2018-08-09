@@ -1,0 +1,6 @@
+framework module Pods_SLReminder {
+  umbrella header "Pods-SLReminder-umbrella.h"
+
+  export *
+  module * { export * }
+}
