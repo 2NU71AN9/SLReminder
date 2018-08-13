@@ -24,7 +24,11 @@ class SLReminderView: UIView {
     }
     
     private let imageView = UIImageView().then{
-        $0.image = UIImage(named:"tipIcon")
+        
+        let path = Bundle(for: SLReminder.self).resourcePath! + "/Reminder.bundle"
+        let CABundle = Bundle(path: path)!
+        let image = UIImage(named: "tipIcon", in:  CABundle, compatibleWith: nil)
+        $0.image = image
     }
 
     private let textLabel = UILabel().then{

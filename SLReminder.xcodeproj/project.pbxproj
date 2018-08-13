@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		120EF046212177D7004EFF6D /* tipIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 120EF044212177D7004EFF6D /* tipIcon@2x.png */; };
-		120EF047212177D7004EFF6D /* tipIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 120EF045212177D7004EFF6D /* tipIcon@3x.png */; };
+		120EF04921217E12004EFF6D /* Reminder.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 120EF04821217E12004EFF6D /* Reminder.bundle */; };
 		12C9570C211BD94B00CE9434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9570B211BD94B00CE9434 /* AppDelegate.swift */; };
 		12C9570E211BD94B00CE9434 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9570D211BD94B00CE9434 /* ViewController.swift */; };
 		12C95711211BD94B00CE9434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C9570F211BD94B00CE9434 /* Main.storyboard */; };
@@ -22,8 +21,7 @@
 
 /* Begin PBXFileReference section */
 		07CA2FD222ECDDADB72401A4 /* Pods_SLReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		120EF044212177D7004EFF6D /* tipIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tipIcon@2x.png"; sourceTree = "<group>"; };
-		120EF045212177D7004EFF6D /* tipIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tipIcon@3x.png"; sourceTree = "<group>"; };
+		120EF04821217E12004EFF6D /* Reminder.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Reminder.bundle; sourceTree = "<group>"; };
 		12C95708211BD94B00CE9434 /* SLReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C9570B211BD94B00CE9434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12C9570D211BD94B00CE9434 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,8 +84,7 @@
 		12C9571D211BD97E00CE9434 /* Reminder */ = {
 			isa = PBXGroup;
 			children = (
-				120EF044212177D7004EFF6D /* tipIcon@2x.png */,
-				120EF045212177D7004EFF6D /* tipIcon@3x.png */,
+				120EF04821217E12004EFF6D /* Reminder.bundle */,
 				12C9571E211BD9A600CE9434 /* SLReminderView.swift */,
 				12C95725211BE08C00CE9434 /* SLReminder.swift */,
 			);
@@ -172,10 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				12C95716211BD94D00CE9434 /* LaunchScreen.storyboard in Resources */,
-				120EF046212177D7004EFF6D /* tipIcon@2x.png in Resources */,
 				12C95713211BD94D00CE9434 /* Assets.xcassets in Resources */,
 				12C95711211BD94B00CE9434 /* Main.storyboard in Resources */,
-				120EF047212177D7004EFF6D /* tipIcon@3x.png in Resources */,
+				120EF04921217E12004EFF6D /* Reminder.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
