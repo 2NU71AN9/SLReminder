@@ -9,7 +9,7 @@
 import UIKit
 import pop
 
-class SLReminder: NSObject {
+public class SLReminder: NSObject {
     
     /// 从屏幕上方弹出提示
     ///
@@ -17,7 +17,7 @@ class SLReminder: NSObject {
     ///   - text: 提示内容
     ///   - duration: 持续时间,默认2秒
     ///   - completion: 完成后下一步的操作
-    static func show(_ text: String?, duration: Double = 2, completion: (() -> Void)? = nil) {
+    public static func show(_ text: String?, duration: Double = 2, completion: (() -> Void)? = nil) {
         guard let text = text,
             (text.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines) as NSString).length > 0,
             let cur_vc = cur_visible_vc
