@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120EF046212177D7004EFF6D /* tipIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 120EF044212177D7004EFF6D /* tipIcon@2x.png */; };
+		120EF047212177D7004EFF6D /* tipIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 120EF045212177D7004EFF6D /* tipIcon@3x.png */; };
 		12C9570C211BD94B00CE9434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9570B211BD94B00CE9434 /* AppDelegate.swift */; };
 		12C9570E211BD94B00CE9434 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9570D211BD94B00CE9434 /* ViewController.swift */; };
 		12C95711211BD94B00CE9434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C9570F211BD94B00CE9434 /* Main.storyboard */; };
 		12C95713211BD94D00CE9434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C95712211BD94D00CE9434 /* Assets.xcassets */; };
 		12C95716211BD94D00CE9434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C95714211BD94D00CE9434 /* LaunchScreen.storyboard */; };
 		12C9571F211BD9A600CE9434 /* SLReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9571E211BD9A600CE9434 /* SLReminderView.swift */; };
-		12C95723211BDD4100CE9434 /* tipIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C95721211BDD4100CE9434 /* tipIcon@2x.png */; };
-		12C95724211BDD4100CE9434 /* tipIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12C95722211BDD4100CE9434 /* tipIcon@3x.png */; };
 		12C95726211BE08C00CE9434 /* SLReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C95725211BE08C00CE9434 /* SLReminder.swift */; };
 		12C95728211C0E5D00CE9434 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C95727211C0E5D00CE9434 /* SecondViewController.swift */; };
 		7BBF29E64057BC473B1A9443 /* Pods_SLReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CA2FD222ECDDADB72401A4 /* Pods_SLReminder.framework */; };
@@ -22,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		07CA2FD222ECDDADB72401A4 /* Pods_SLReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		120EF044212177D7004EFF6D /* tipIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tipIcon@2x.png"; sourceTree = "<group>"; };
+		120EF045212177D7004EFF6D /* tipIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tipIcon@3x.png"; sourceTree = "<group>"; };
 		12C95708211BD94B00CE9434 /* SLReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C9570B211BD94B00CE9434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12C9570D211BD94B00CE9434 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,8 +32,6 @@
 		12C95715211BD94D00CE9434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12C95717211BD94D00CE9434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12C9571E211BD9A600CE9434 /* SLReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLReminderView.swift; sourceTree = "<group>"; };
-		12C95721211BDD4100CE9434 /* tipIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tipIcon@2x.png"; sourceTree = "<group>"; };
-		12C95722211BDD4100CE9434 /* tipIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tipIcon@3x.png"; sourceTree = "<group>"; };
 		12C95725211BE08C00CE9434 /* SLReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLReminder.swift; sourceTree = "<group>"; };
 		12C95727211C0E5D00CE9434 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5755B90A25FB291BD2586E86 /* Pods-SLReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLReminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-SLReminder/Pods-SLReminder.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,20 +86,12 @@
 		12C9571D211BD97E00CE9434 /* Reminder */ = {
 			isa = PBXGroup;
 			children = (
-				12C95720211BDD4100CE9434 /* Resource */,
+				120EF044212177D7004EFF6D /* tipIcon@2x.png */,
+				120EF045212177D7004EFF6D /* tipIcon@3x.png */,
 				12C9571E211BD9A600CE9434 /* SLReminderView.swift */,
 				12C95725211BE08C00CE9434 /* SLReminder.swift */,
 			);
 			path = Reminder;
-			sourceTree = "<group>";
-		};
-		12C95720211BDD4100CE9434 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				12C95721211BDD4100CE9434 /* tipIcon@2x.png */,
-				12C95722211BDD4100CE9434 /* tipIcon@3x.png */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		3E90E7B6B3E1368BC5706E06 /* Pods */ = {
@@ -180,10 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				12C95716211BD94D00CE9434 /* LaunchScreen.storyboard in Resources */,
-				12C95723211BDD4100CE9434 /* tipIcon@2x.png in Resources */,
+				120EF046212177D7004EFF6D /* tipIcon@2x.png in Resources */,
 				12C95713211BD94D00CE9434 /* Assets.xcassets in Resources */,
 				12C95711211BD94B00CE9434 /* Main.storyboard in Resources */,
-				12C95724211BDD4100CE9434 /* tipIcon@3x.png in Resources */,
+				120EF047212177D7004EFF6D /* tipIcon@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
