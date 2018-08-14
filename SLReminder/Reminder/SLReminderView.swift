@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Then
-import SnapKit
 
 // 电池栏高度 普通20 iPhoneX 40
 public let statusBarHeight: CGFloat = UIApplication.shared.statusBarFrame.height
@@ -19,22 +17,23 @@ class SLReminderView: UIView {
         didSet {
             guard let text = text else { return }
             textLabel.text = text
-            textLabel.adjustsFontSizeToFitWidth = true
         }
     }
     
-    private let imageView = UIImageView().then{
-        
+    private lazy var imageView: UIImageView  = {
+        let imageView = UIImageView()
         let path = Bundle(for: SLReminder.self).resourcePath! + "/Reminder.bundle"
         let CABundle = Bundle(path: path)!
         let image = UIImage(named: "tipIcon", in:  CABundle, compatibleWith: nil)
-        $0.image = image
-    }
-
-    private let textLabel = UILabel().then{
-        $0.numberOfLines = 0
-        $0.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-    }
+        imageView.image = image
+        return imageView
+    }()
+    private lazy var textLabel: UILabel = {
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        return label
+    }()
     
     init() {
         super.init(frame: CGRect(x: 0,
@@ -57,16 +56,10 @@ class SLReminderView: UIView {
     }
     
     private func layoutConstraint() {
-        imageView.snp.makeConstraints { (make) in
-            make.leading.equalToSuperview().offset(15)
-            make.bottom.equalToSuperview().offset(-5)
-            make.size.equalTo(20)
-        }
-        textLabel.snp.makeConstraints { (make) in
-            make.leftMargin.equalTo(imageView.snp.right).offset(15)
-            make.right.equalToSuperview().offset(-15)
-            make.bottom.lessThanOrEqualToSuperview().offset(-5)
-            make.height.lessThanOrEqualTo(35)
-        }
+        imageView.frame = CGRect(x: 15, y: self.bounds.height - 28, width: 20, height: 20)
+        textLabel.frame = CGRect(x: imageView.frame.maxX + 15,
+                                 y: imageView.frame.minY,
+                                 width: bounds.width - 15 - imageView.frame.maxX - 15,
+                                 height: imageView.bounds.height)
     }
 }

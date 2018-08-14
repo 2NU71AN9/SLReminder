@@ -25,10 +25,12 @@ class SecondViewController: UIViewController {
         }
     }
 
-    let label = UILabel().then {
-        $0.text = "点击屏幕弹出提示"
-        $0.sizeToFit()
-    }
+    let label: UILabel = {
+        let label = UILabel()
+        label.text = "点击屏幕弹出提示"
+        label.sizeToFit()
+        return label
+    }()
     
     
 }
