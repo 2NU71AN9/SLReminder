@@ -4,10 +4,5 @@
 pod 'SLReminder'
 
 ```
-SLAlertView.showSingleAlert(text: "提示信息", actionTitle: "确定", action: nil)
-SLAlertView.showChoiceAlert(text: "提示信息", firstTitle: "取消", secondTitle: "确定", firstAction: {
-            
-}) {
-            
-}
+SLReminder.show("提示内容")
 ```
